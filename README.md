@@ -23,6 +23,38 @@ npm serve
 
 ### Ejemplos:
 
+#### Ejemplo con base de datos Mongo
+
+* Agregar un nuevo Usuario 
+```
+mutation {
+  createUser(input:{
+    firstname: "Pablo"
+    lastname: "Silva"
+    age:25
+  }) {
+    _id
+    firstname
+    lastname
+    age
+  }
+}
+```
+
+* Obtener todos los usuarios 
+```
+query {
+  Users {
+    _id
+    firstname
+    lastname
+    age
+  }
+}
+```
+
+#### Ejemplo con datos dummy
+
 * Query para listar todas las tareas
 ```
 query {

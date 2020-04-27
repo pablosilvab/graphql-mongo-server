@@ -14,7 +14,10 @@ app.get('/', (req,res)=>{
 
 app.use('/graphql', graphqlHTTP({
     graphiql: true,
-    schema: schema
+    schema: schema,
+    context: {
+        
+    }
 }));
 
 app.listen(3000, ()=>{
