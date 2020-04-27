@@ -5,6 +5,8 @@ const typeDefs = `
 
     type Query {
         hello: String
+        greet(name: String): String
+        requiredGreet(name: String!): String
     }
 
     `;
