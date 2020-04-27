@@ -3,11 +3,13 @@ Proyecto de juguete para probar GraphQL
 
 ## Ejecución
 
+En ambiente de desarrollo:
+
 ```
 npm start
 ```
 
-Mediante código generado por babel
+Una vez finalizado el desarrollo:
 
 Generar código: 
 ```
@@ -16,7 +18,7 @@ npm run build
 
 Ejecutar:
 ```
-node dist/index.js
+npm serve
 ```
 
 
