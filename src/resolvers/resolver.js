@@ -1,3 +1,5 @@
+import {tasks} from '../sample/sample'
+
 export const resolvers = {
     Query: {
         hello: () =>{
@@ -10,6 +12,9 @@ export const resolvers = {
         requiredGreet(root, {name}){
             console.log(name);
             return `Hello ${name}!`
+        },
+        tasks(){
+            return tasks;
         }
     }
 };
