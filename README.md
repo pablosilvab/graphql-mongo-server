@@ -117,6 +117,4 @@ mutation {
 ## Herramientas
 
 * [GraphQL](https://graphql.org)
-* Babel
-* Apollo GraphQL
-
+* [Babel](https://babeljs.io)
