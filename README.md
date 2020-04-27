@@ -21,6 +21,36 @@ Ejecutar:
 npm serve
 ```
 
+### Ejemplos:
+
+* Query para listar todas las tareas
+```
+query {
+  tasks {
+    _id
+    title
+    description
+    number
+  }
+}
+```
+
+
+* Mutation para crear una nueva tarea
+```
+mutation {
+  createTask(input: {
+      title: "Task 1", 
+      description: "Awesome task"}) 
+  {
+    _id
+    title
+    description
+    number
+  }
+}
+```
+
 ## Conceptos
 
 * Schema: Objeto donde puedes indicar todo lo que puedes consultar desde un cliente. GrapiQL simula una aplicación cliente. 
