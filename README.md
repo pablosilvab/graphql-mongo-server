@@ -53,6 +53,32 @@ query {
 }
 ```
 
+* Eliminar un usuario 
+```
+mutation {
+  deleteUser(_id: "5ea767e3853b50433696bdd1") {
+    firstname
+    lastname
+  }
+}
+```
+
+* Actualizar un usuario 
+```
+mutation {
+  updateUser(
+    _id: "5ea769fd014f6544b7bc6029", 
+    input: {
+      firstname: "Neymar"
+      lastname: "Jr"
+    }) {
+    firstname
+    lastname
+    age
+  }
+}
+```
+
 #### Ejemplo con datos dummy
 
 * Query para listar todas las tareas
